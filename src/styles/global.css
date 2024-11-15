@@ -62,7 +62,7 @@ h1 {
   display: unset;
 }
 
-@media screen and (min-width: 636px) {
+/* @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
     display: block;
@@ -87,5 +87,35 @@ h1 {
   
   .dark .nav-links a {
     color: #fff;
+  }
+} */
+
+/* General dark mode styles */
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+/* Responsive navigation styles */
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
